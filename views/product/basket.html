@@ -1,0 +1,56 @@
+<div class="basket">
+    <div class="pl150">
+        <label class="mr30">全场运费一律2元</label>
+        <label>简易计算器</label>
+    </div>
+    <div class="pl50">
+        <label>确认商品交易价格与交易条件</label>
+    </div>
+    <ul class="goods">
+        <li>
+            <label class="w400">商品名</label>
+            <label class="w70">原价</label>
+            <label class="w70">优惠价</label>
+            <label class="w50">打折</label>
+            <label class="w200">数量</label>
+            <label class="ml5 w50">删除</label>
+        </li>
+        <li ng-repeat="x in goods">
+            <a class="w400 ell" href="#">{{x.name}}</a>
+            <span class="w70">￥{{x.price}}</span>
+            <span class="w70 red">￥{{x.discount_price}}</span>
+            <span class="w50 pl2">{{x.discount}}折</span>
+            <input class="w200 mt2 mb2 h22" type="number" value="{{x.count}}">
+            <a class="ml5 w50" href="#">删除</a>
+        </li>
+        <li>
+            <a class="w500" href="#">继续挑选商品</a>
+            <span class="w160">总价：￥xxx</span>
+            <span class="w160">为您节省￥xxx</span>
+        </li>
+    </ul>
+    <div class="pl50">
+        补充您的邮件地址和联系人基本信息
+    </div>
+    <div class="pl150 pt20">
+        <div>
+            <span class="w70 tr">收件人：</span>
+            <input type="text" class="mt2 mb2 h22">
+        </div>
+        <div>
+            <span class="w70 tr">地&nbsp;&nbsp;&nbsp;&nbsp;址：</span>
+            <input type="text" class="mt2 mb2 h22"><strong>&nbsp;请点击填写地址</strong>
+        </div>
+        <div>
+            <span class="w70 tr">电&nbsp;&nbsp;&nbsp;&nbsp;话：</span>
+            <input type="" class="w50 mt2 mb2 h22">-<input type="" class="w100 mt2 mb2 h22">-<input type=""
+                                                                                                    class="w50 mt2 mb2 h22">&nbsp;(区号-电话号码-分机)
+        </div>
+        <div>
+            <span class="w70"></span>
+            <input class="mt10" type="image" src="./styles/images/submit.gif">
+        </div>
+    </div>
+
+
+</div>

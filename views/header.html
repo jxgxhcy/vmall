@@ -1,0 +1,25 @@
+<div class="header overhidden">
+	<div class="top-right">
+        <a href="#/basket"><i class="tr1"></i>购物车</a>
+        <a href="#/help"><i class="tr2"></i>帮助中心</a>
+        <a href="#/collect"><i class="tr3"></i>加入收藏</a>
+        <a href="#/"><i class="tr4"></i>设为首页</a>
+        <a href="#/login">登录</a>
+        <a href="#/register">注册</a>
+    </div>
+    <div class="navi">
+        <a ui-sref="home" ui-sref-active="nav_selected">首&nbsp;&nbsp;&nbsp;&nbsp;页</a>
+        <a ui-sref="jd" ui-sref-active="nav_selected">家用电器</a>
+        <a ui-sref="phone" ui-sref-active="nav_selected">手机数码</a>
+        <a ui-sref="dy" ui-sref-active="nav_selected">日用百货</a>
+        <a ui-sref="book" ui-sref-active="nav_selected">书&nbsp;&nbsp;&nbsp;&nbsp;籍</a>
+        <a ui-sref="help" ui-sref-active="nav_selected">帮助中心</a>
+        <a ui-sref="#" ui-sref-active="nav_selected">免费开店</a>
+        <a ui-sref="#" ui-sref-active="nav_selected">全球咨询</a>
+    </div>
+    <div class="welcome">
+            您好，欢迎访问贵美商城！&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <b ng-controller="dateCtrl" ng-bind="currentTime">{{ currentTime}}</b>
+    </div>
+
+</div>

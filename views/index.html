@@ -1,0 +1,86 @@
+﻿<div class="home">
+    <div class="home_left">
+        <div class="title">
+            <a href="#">商品分类</a>
+            <a href="#">全部分类</a>
+        </div>
+        <div class="bb">
+            <div class="cate" ng-repeat="category in categories">
+                <div class="cate_name">{{category.category_name}}</div>
+                <div class="cate_list">
+                    <a ng-repeat="subitem in category.sub_categories" href="#">
+                        {{subitem}}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="home_mid flex_y">
+        <div class="banner">
+            <div id="myCarousel" class="carousel slide lunbo"  data-ride="carousel" data-interval="1000">
+                <!-- 轮播（Carousel）指标 -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <!-- 轮播（Carousel）项目 -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="./styles/images/ad-01.jpg" alt="ad01">
+                    </div>
+                    <div class="item">
+                        <img src="./styles/images/ad-02.jpg" alt="ad02">
+                    </div>
+                    <div class="item">
+                        <img src="./styles/images/ad-03.jpg" alt="ad03">
+                    </div>
+                </div>
+             <!--轮播（Carousel）导航-->
+                <a class="carousel-control left" href="#myCarousel"
+                   data-slide="prev"></a>
+                <a class="carousel-control right" href="#myCarousel"
+                   data-slide="next"></a>
+            </div>
+        </div>
+
+
+        <!-- 促销 -->
+        <div class="promote">
+            <div class="title">
+                <a href="#" >疯狂抢购 &gt;&gt;</a>&nbsp;&nbsp;
+            </div>
+            <div class="bb">
+                <a class="p_item" ng-repeat="promote in promotes" href="#">
+                    <img src="./styles/images/{{promote.img_url}}">{{promote.promote_name}}
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="home_right flex_y ell">
+        <div class="annonce flex_y">
+            <div class="title"><a href="#">公告栏</a><a href="#">全部公告</a></div>
+            <div class="flex_x f1 bb">
+                <img src="./styles/images/list1.jpg" alt="annonce">
+                <div class="flex_y">
+                    <a href="#" ng-repeat="x in announces">{{x.info}}</a>
+                </div>
+            </div>
+        </div>
+        <div class="news flex_y">
+            <div class="title"><a href="#">新品上架</a><a href="#">全部分类</a></div>
+            <div class="flex_y f1 bb">
+                <a  href="#/" ng-repeat="new in new_arrivals">
+                    <img src="./styles/images/{{new.img_url}}">&nbsp;{{new.info}}
+                </a>
+            </div>
+        </div>
+        <div class="tab flex_y">
+            <div class="title tab_title flex_x">
+                <a ui-sref=".notebook" ui-sref-active="tab_selected_1">笔记本</a>
+                <a ui-sref=".phone" ui-sref-active="tab_selected_2">手机充值</a>
+            </div>
+            <div class="f1 bb" ui-view></div>
+        </div>
+    </div>
+</div>
