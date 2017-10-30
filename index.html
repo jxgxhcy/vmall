@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en-us" class="no-js">
+<head>
+	<!-- 编码信息 -->
+	<meta charset="utf-8">
+	<!-- 使用最新版的ie 浏览器，或者chrome-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<!-- 让布局在移动浏览器上显示的更好 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<!-- 针对手持设备优化，主要是针对一些老的不识别viewport 的浏览器，比如黑莓 -->
+	<meta name="HandheldFriendly" content="true">
+    <title>贵美商城</title>
+	<link rel="stylesheet" href="styles/css/zxx.lib.css">
+	<link rel="stylesheet" href="styles/css/main.css">  
+	<link rel="stylesheet" href="angulars/bootstrap/bootstrap.min.css">
+</head>
+<body  ng-app="myApp">
+	<div class="aside_f">
+        <img class="noScro" src="./styles/images/list2.jpg" alt="ad">
+    </div>
+    <div class="aside_r">
+        <img class="noScro" src="./styles/images/bi-ad.gif" alt="ad">
+    </div>
+	<div class="mycontainer" ng-controller="AppCtrl">
+		<div ng-include="'views/header.html'"></div>
+        <div class="content" ui-view></div>
+        <div ng-include="'views/footer.html'"></div>
+    </div>
+
+	<script src="scripts/data.js"></script>
+	<script type="text/javascript" src="angulars/angular/angular.js"></script>
+    <script type="text/javascript" src="angulars/angular/angular.min.js"></script>
+    <script type="text/javascript" src="angulars/angular-ui-route/angular-ui-route.js"></script>
+
+	<script src="angulars/bootstrap/jquery.min.js"></script>
+	<script src="angulars/bootstrap/bootstrap.min.js"></script> 
+
+    <script src="scripts/app.js"></script>
+
+	<script src="scripts/product/productModule.js"></script>
+
+	<script src="scripts/user/userModule.js"></script>
+</body>
+</html>
