@@ -4,9 +4,9 @@ productModule.config(function($stateProvider) {
     $stateProvider.state('basket', {
         url: "/basket",
         templateUrl: "views/product/basket.html"
-    }).state('info', {
-        url: "/info",
-        templateUrl: "views/product/info.html"
+    }).state('detail', {
+        url: "/detail",
+        templateUrl: "views/product/detail.html"
     }).state('phone', {
         url: "/phone",
         templateUrl: "views/product/productlist.html"

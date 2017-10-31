@@ -36,6 +36,8 @@ angular
         $scope.new_arrivals = global.new_arrivals;
         $scope.announces = global.announces;
         $scope.announces = global.announces;
+    $scope.goods = global.goods;
+    $scope.lists = global.lists;
 
     }]).controller("dateCtrl",['$scope','$interval',function($scope,$interval) {
         // 对Date的扩展，将 Date 转化为指定格式的String
