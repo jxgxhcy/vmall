@@ -331,6 +331,10 @@
 .tr{text-align:right;}
 .tl{text-align:left;}
 .tj{text-align:justify;}
+
+.tjl {
+    text-align-last: justify;
+}
 /* text-decoration */
 .tdl{text-decoration:underline;}
 .tdn,.tdn:hover,.tdn a:hover,a.tdl:hover{text-decoration:none;}

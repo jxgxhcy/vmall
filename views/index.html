@@ -70,7 +70,7 @@
         <div class="news flex_y">
             <div class="title"><a href="#">新品上架</a><a href="#">全部分类</a></div>
             <div class="flex_y f1 bb">
-                <a href="#/detail" ng-repeat="new in new_arrivals">
+                <a ui-sref="info" ng-repeat="new in new_arrivals">
                     <img ng-src="./styles/images/{{new.img_url}}">&nbsp;{{new.info}}
                 </a>
             </div>
