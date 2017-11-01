@@ -12,20 +12,7 @@
 
 
 项目答辩预约时间范围:
-11月2号至11月7号工作日  
-
-
-
-
-
-<body>
-    <div id="page1"></div>
-    <div id="page2"></div>
-    <script>
-          $("#page1").load("page/Page_1.html");
-          $("#page2").load("page/Page_2.html");
-    </script>
-</body>
+11月2号至11月7号工作日
 
 
 
