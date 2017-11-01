@@ -15,7 +15,7 @@ angular
         'productModule'
     ])
     .config(function($stateProvider, $urlRouterProvider) {
-        $urlRouterProvider.otherwise('home');
+        $urlRouterProvider.otherwise('/');
         $stateProvider.state('home', {
             url: "/home",
             templateUrl: "views/index.html",
@@ -29,7 +29,8 @@ angular
             url: "/notebook",
             templateUrl: "views/tab_notebook.html"
         });
-    }).controller('AppCtrl', ['$scope',function($scope) {
+    }).controller('AppCtrl', ['$scope', '$state', function ($scope, $state) {
+    $state.go('home');
         $scope.links = global.links;
         $scope.promotes = global.promotes;
         $scope.categories = global.categories;
