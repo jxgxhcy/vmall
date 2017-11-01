@@ -21,8 +21,7 @@
     z-index: 100;
 }
 
-
-.mycontainer{
+.myContainer {
     clear: both;
     width: 1024px;
     margin: 0 auto;
