@@ -4,16 +4,16 @@
             <a href="#">商品分类</a>
             <a href="#">全部分类</a>
         </div>
-        <div class="bb">
-            <div class="cate" ng-repeat="category in categories">
+        <ul class="bb">
+            <li class="cate" ng-repeat="category in categories">
                 <div class="cate_name">{{category.category_name}}</div>
                 <div class="cate_list">
                     <a ng-repeat="subitem in category.sub_categories" href="#">
                         {{subitem}}
                     </a>
                 </div>
-            </div>
-        </div>
+            </li>
+        </ul>
     </div>
     <div class="home_mid flex_y">
         <div class="banner">

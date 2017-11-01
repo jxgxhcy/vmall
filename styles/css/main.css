@@ -161,6 +161,9 @@
     flex: 1;
 }
 
+/*
+    首页右边
+*/
 .home_right{
     justify-content: space-between;
 }
@@ -199,12 +202,8 @@
     text-align: center;
     cursor: default;
     color: #080808;
-}/*
-.tab_title a:active{
-    background: white;
-    color: orange;
 }
-*/
+
 .tab_selected_1,
 .tab_selected_2{
     background: white;
@@ -229,6 +228,9 @@
     height: 90%;
 }
 
+/*
+  首页左边
+*/
 
 .home_left{
     display: flex;
@@ -249,7 +251,8 @@
 .title a{
     color: white;
 }
-.home_left>div:last-child{
+
+.home_left ul {
     flex: 1;
 }
 
@@ -269,7 +272,6 @@
 }
 
 .cate .cate_list{
-    /*height: calc(100% - 25px);*/
     flex: 1;
     display: flex;
     flex-flow: row wrap;
@@ -283,6 +285,9 @@
     overflow: hidden;
 }
 
+/*
+    首页中间部分
+*/
 .home_mid{
     width: 550px;
     padding: 0 13px;
