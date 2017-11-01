@@ -658,15 +658,19 @@ a, span {
 /**
     商品信息
  */
-.detail {
+.info {
     border: 1px solid #f9f4e0;
 }
 
-.detail .online_pay {
+.info .online_pay {
     height: 38px;
     padding-left: 80px;
     background: #f0ebcb url("../images/onlinepay.gif") no-repeat left center;
     border: 1px solid #f7c27e;
+}
+
+.info .tj:after {
+
 }
 
 
