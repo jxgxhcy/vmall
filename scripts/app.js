@@ -15,7 +15,7 @@ angular
         'productModule'
     ])
     .config(function($stateProvider, $urlRouterProvider) {
-        $urlRouterProvider.otherwise('detail');
+        $urlRouterProvider.otherwise('home');
         $stateProvider.state('home', {
             url: "/home",
             templateUrl: "views/index.html",

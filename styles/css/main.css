@@ -399,16 +399,16 @@
 
 .login{
     width: 977px;
-    height:550px;
+    height: 480px;
     background:  url("../images/login_bg.gif") no-repeat;
     display: flex;
-    align-items: center;
+    padding-top: 50px;
     border: 1px solid #f9f4e0;
 }
 .login_l{
     flex: 5;
     border-right: 1px solid darkgray;
-    height: 450px;
+    height: 400px;
     padding-left: 10px;
 }
 .login_l table{
@@ -433,7 +433,7 @@ input[type="image"]:hover {
     box-shadow:  0 0 20px orange;
 }
 .login_l ul{
-    bottom: 90px;
+    bottom: 40px;
     left:120px ;
 }
 
@@ -441,12 +441,12 @@ input[type="image"]:hover {
 .ral a{
     color: #2b669a;
     text-decoration: underline;
-    line-height: 3;
+    line-height: 30px;
 }
 
 .login_r{
     flex:4;
-    height: 450px;
+    height: 400px;
 }
 
 .login_r img{
@@ -627,30 +627,49 @@ input[type="image"]:hover {
     line-height: 32px;
 }
 
-.basket .goods {
-    padding: 5px 50px;
-    line-height: 25px;
+a, span {
+    display: inline-block;
 }
 
 .basket a,
-.basket span {
-    display: inline-block;
+.basket span,
+.basket input {
+    vertical-align: top;
 }
 
 /*
     产品列表
 */
-.basket .salelist {
+.sale {
+    border: 1px solid #f9f4e0;
+}
+
+.sale .sale_list {
     background: url("../images/list_bg.gif") no-repeat;
 }
 
-.basket .salelist li {
+.sale .sale_list li {
     border-top: 1px dashed darkgray;
 }
 
-.basket .salelist li:first-child {
+.sale .sale_list li:first-child {
     border: none;
 }
+
+/**
+    商品信息
+ */
+.detail {
+    border: 1px solid #f9f4e0;
+}
+
+.detail .online_pay {
+    height: 38px;
+    padding-left: 80px;
+    background: #f0ebcb url("../images/onlinepay.gif") no-repeat left center;
+    border: 1px solid #f7c27e;
+}
+
 
 
 
