@@ -2,14 +2,14 @@
     <label class="db tc mt15 f15">联想Y450A-TFO(NBA纪念版) 512独显超强性价比</label>
     <hr>
     <div class="flex_x">
-        <div class="p5 mr30">
-            <img src="./styles/images/show1_big.jpg" alt="big">
+        <div class="p5 mr30" ng-controller="changeCtrl">
+            <img ng-src="./styles/images/{{show.img_url}}" alt="big">
             <div class="flex_x p10">
-                <img class="bdd" src="./styles/images/show1.jpg" alt="show1">
-                <img class="bdd" src="./styles/images/show2.jpg" alt="show2">
-                <img class="bdd" src="./styles/images/show3.jpg" alt="show3">
-                <img class="bdd" src="./styles/images/show4.jpg" alt="show4">
-                <img class="bdd" src="./styles/images/show5.jpg" alt="show5">
+                <img class="bdd" src="./styles/images/show1.jpg" alt="show1" ng-click="change(0)">
+                <img class="bdd" src="./styles/images/show2.jpg" alt="show2" ng-click="change(1)">
+                <img class="bdd" src="./styles/images/show3.jpg" alt="show3" ng-click="change(2)">
+                <img class="bdd" src="./styles/images/show4.jpg" alt="show4" ng-click="change(3)">
+                <img class="bdd" src="./styles/images/show5.jpg" alt="show5" ng-click="change(4)">
             </div>
             <div class="flex_x">
                 <img src="./styles/images/share.gif" alt="share">

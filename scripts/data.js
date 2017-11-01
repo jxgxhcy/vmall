@@ -6,7 +6,8 @@ var global = {
     links:null,
     slides:null,
 	goods:null,
-	lists:null
+    lists: null,
+    show_bigs: null
 };
 
 global.slides =
@@ -88,3 +89,10 @@ global.goods =
 		{name:"美国口语成功训练系统(MP3)",price:480.00,discount_price:292.90,discount:6,count:4},
 		{name:"简.奥斯汀全集(DVD-9) (赠送BBC产品目录以及各种素材等)",price:138.00,discount_price:103.90,discount:8,count:1},
 	];
+global.show_bigs = [
+    {img_url: "show1_big.jpg"},
+    {img_url: "show2_big.jpg"},
+    {img_url: "show3_big.jpg"},
+    {img_url: "show4_big.jpg"},
+    {img_url: "show5_big.jpg"}
+];

@@ -52,7 +52,7 @@
             </div>
             <div class="bb">
                 <a class="p_item" ng-repeat="promote in promotes" href="#">
-                    <img src="./styles/images/{{promote.img_url}}">{{promote.promote_name}}
+                    <img ng-src="./styles/images/{{promote.img_url}}">{{promote.promote_name}}
                 </a>
             </div>
         </div>
@@ -71,7 +71,7 @@
             <div class="title"><a href="#">新品上架</a><a href="#">全部分类</a></div>
             <div class="flex_y f1 bb">
                 <a href="#/detail" ng-repeat="new in new_arrivals">
-                    <img src="./styles/images/{{new.img_url}}">&nbsp;{{new.info}}
+                    <img ng-src="./styles/images/{{new.img_url}}">&nbsp;{{new.info}}
                 </a>
             </div>
         </div>
