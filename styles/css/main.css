@@ -1,4 +1,4 @@
-.aside_f{
+.aside_l {
     float: left;
     position: absolute;
     width: 120px;
@@ -16,7 +16,7 @@
     vertical-align: middle;
 }
 
-.noScro{
+.fixed {
     position: fixed;
     z-index: 100;
 }
@@ -331,7 +331,6 @@
 .promote .p_item{
     width: 30%;
     height: 30%;
-    display: block;
 }
 
 /**
@@ -652,12 +651,8 @@ a, span {
     background: url("../images/list_bg.gif") no-repeat;
 }
 
-.sale .sale_list li {
+.sale .sale_list li:not(:first-child) {
     border-top: 1px dashed darkgray;
-}
-
-.sale .sale_list li:first-child {
-    border: none;
 }
 
 /**
